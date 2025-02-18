@@ -6,15 +6,20 @@ const nextConfig: NextConfig = {
     domains: ["loremflickr.com"],
   },
 };
-const withPWA = require("next-pwa")({
+const withPWA = require("@ducanh2912/next-pwa").default({
   dest: "public",
-  register: true,
-  skipWaiting: true,
+  cacheOnFrontEndNav: true,
+  aggressiveFrontEndNavCaching: true,
+  reloadOnOnline: true,
+  swcMinify: true,
+  disable: false,
+  workboxOptions:{
+    disableDevLogs: true,
+  },
 });
 
-module.exports = withPWA({
-  reactStrictMode: true,
-});
+
+module.exports = withPWA(nextConfig);
 
 
 export default nextConfig;

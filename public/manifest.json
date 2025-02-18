@@ -1,4 +1,5 @@
 {
+    "id":"1",
     "name": "turbopack-test",
     "short_name": "NextPWA",
     "description": "A Next.js Progressive Web App",
@@ -6,6 +7,7 @@
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
+    "orientation": "portrait",
     "icons": [
       {
         "src": "/icons/icon-192x192.png",
