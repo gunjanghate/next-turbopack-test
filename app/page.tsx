@@ -28,6 +28,7 @@ export default function Home() {
             .
           </li>
           <code>GG testing turbopack</code>
+          <h2>Making some changes</h2>
         </ul>
         <button>
           <Link href="/test">
